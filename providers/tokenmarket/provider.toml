@@ -18,7 +18,7 @@
 # https://www.tokensmarket.ai/docs
 # https://api.tokensmarket.ai/v1/models
 name = "Token Market"
-env = ["TOKENSMARKET_API_KEY"]
+env = ["TOKENMARKET_API_KEY"]
 npm = "@ai-sdk/openai-compatible"
 doc = "https://www.tokensmarket.ai/docs"
 api = "https://api.tokensmarket.ai/v1"
