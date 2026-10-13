@@ -1,8 +1,8 @@
-# Alibaba Cloud (DashScope) channel. The effective `reasoning_effort`
-# values are `none | high | max`: `none` disables reasoning, low/medium
-# collapse to high, and xhigh collapses to max.
+# Alibaba Cloud (DashScope) channel. Same-channel peers expose effective
+# `reasoning_effort = high | max`; there is no verified gateway-specific
+# `none` switch for this hosted GLM.
 base_model = "zhipuai/glm-5.2"
-reasoning_options = [{ type = "effort", values = ["none", "high", "max"] }]
+reasoning_options = [{ type = "effort", values = ["high", "max"] }]
 
 [interleaved]
 field = "reasoning_content"

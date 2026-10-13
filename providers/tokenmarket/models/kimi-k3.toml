@@ -1,7 +1,7 @@
 # Alibaba Cloud (DashScope) channel.
 # Toggle: `enable_thinking = false` (effort "none") | `enable_thinking = true`.
-# Effort: `reasoning_effort = high | max`; low/medium collapse to high and xhigh
-# collapses to max on this channel, so only two levels are distinctly reachable.
+# Effort: `reasoning_effort = low | high | max`, matching the tunnel payload and
+# the same-model DashScope/native surface. No gateway-specific collapse evidence.
 base_model = "moonshotai/kimi-k3"
 
 [[reasoning_options]]
@@ -9,7 +9,7 @@ type = "toggle"
 
 [[reasoning_options]]
 type = "effort"
-values = ["high", "max"]
+values = ["low", "high", "max"]
 
 [interleaved]
 field = "reasoning_content"
